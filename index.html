@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background-color: lightblue;">
+    <header class="header">
+        <div>ch</div>
+        <div>welcome</div>
+    </header>
+    <main class="main">
+        <section class="main_block">
+            <span style="font-weight: bold;">blank.ch</span> – is a learning-focused 
+            image board project that I'm building 
+            to explore how modern web applications 
+            work under the hood. Inspired by 
+            classic anonymous boards, the site 
+            allows users to create threads and 
+            post images with comments, all 
+            dynamically managed through a backend 
+            and a database. The goal is to get 
+            hands-on experience with <span style="font-weight: bold;">HTML, CSS, 
+            JavaScript,</span> and backend logic like 
+            routing, file uploads, and database 
+            interactions. It's not just about the 
+            visuals—I'm also learning about 
+            performance, accessibility, and 
+            how to structure a scalable project.
+            <br>
+            <br>
+            Right now there are 
+            <span style="font-weight: bold;">0 </span>
+            open boards. Average post speed is 
+            <strong>0</strong>, total posts 
+            <strong>0</strong>.
+            <div>
+                <button>asd</button>
+                <button>asdsa</button>
+            </div>
+        </section>
+        <br>
+        <section class="main_block boards">
+            <div>
+                <ul>
+                    <li class="boards_title">Title</li>
+                    <li><a href="/">one</a></li>
+                    <li><a href="">two</a></li>
+                    <li><a href="">three</a></li>
+                    <li><a href="">four</a></li>
+                    <br>
+                    <li class="boards_title">Title</li>
+                    <li><a href="/">one</a></li>
+                    <li><a href="">two</a></li>
+                    <li><a href="">three</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="boards_title">Title</li>
+                    <li><a href="/">one</a></li>
+                    <li><a href="">two</a></li>
+                    <li><a href="">three</a></li>
+                    <li><a href="">four</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="boards_title">Title</li>
+                    <li><a href="/">one</a></li>
+                    <li><a href="">two</a></li>
+                    <li><a href="">three</a></li>
+                    <li><a href="">four</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="boards_title">Title</li>
+                    <li><a href="/thread.html">/b/</a></li>
+                </ul>
+            </div>
+            
+        </section>
+        <section class="main_block">
+            <header class="main_title">Community boards</header>
+            asdsadsad
+            <div class="tab-container">
+                <div class="tabs">
+                    <div class="tab active" onclick="openTab(event, 'tab1')">Boards</div>
+                    <div class="tab" onclick="openTab(event, 'tab2')">Tab 2</div>
+                </div>
+                
+                <div id="tab1" class="tab-content active">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Board</th>
+                                <th>Name</th>
+                                <th>Posting Speed</th>
+                                <th>Unique IPs</th>
+                                <th>Description</th>
+                                <th>Total Posts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Empty table with no data as requested -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="tab2" class="tab-content">
+                    <!-- Empty tab content for future use -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabContent, tabLinks;
+            
+            // Hide all tab content
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].className = tabContent[i].className.replace(" active", "");
+            }
+            
+            // Remove "active" class from all tabs
+            tabLinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+            }
+            
+            // Show the current tab and add "active" class to the button that opened the tab
+            document.getElementById(tabName).className += " active";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
